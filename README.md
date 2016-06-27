@@ -87,16 +87,16 @@
 ### 经验和总结
 - 安装`AR.Drone2.0 SDk`出现编译错误。这个套件是为linux 32bit开发，在64bit上需要安装一些依赖。[参考][9]。同时我们的一位组员的ubuntu 15.xx在安装依赖后依然无法编译套件，建议使用ubuntu 14.xx做二次开发。
 - 将图像数据转化为`IplImage`格式：
-  ```
-  if (src == NULL)
-      src = cvCreateImage(cvSize(width,height), IPL_DEPTH_8U, 3);
-  if (dst == NULL)
-      dst = cvCreateImage(cvSize(width,height), IPL_DEPTH_8U, 3);
-  src->imageData = (char*)realdata; // realdata 解码后的图像数据
-  cvCvtColor(src, dst, CV_RGB2BGR);
-  image = cv::cvarrToMat(src);
-  ```
-  这里需要注意realdata应当为rgb888格式，解码后的数据格式依据设置而定，如果为其他格式需要转为rgb888格式才能应用以上代码。比如我们发送过来的是rgb565格式，我们自己写了一段代码进行转换。
+```
+if (src == NULL)
+   src = cvCreateImage(cvSize(width,height), IPL_DEPTH_8U, 3);
+if (dst == NULL)
+   dst = cvCreateImage(cvSize(width,height), IPL_DEPTH_8U, 3);
+src->imageData = (char*)realdata; // realdata 解码后的图像数据
+cvCvtColor(src, dst, CV_RGB2BGR);
+image = cv::cvarrToMat(src);
+```
+这里需要注意realdata应当为rgb888格式，解码后的数据格式依据设置而定，如果为其他格式需要转为rgb888格式才能应用以上代码。比如我们发送过来的是rgb565格式，我们自己写了一段代码进行转换。
 - 参考过`video_deom`里面的并行代码后。我们觉得在自己的代码中应用线程的知识很有价值。在处理图像的步骤中，我们使用一个线程独立拷贝共享内存中的数据，另一个线程负责处理图像。这样避免了拷贝和处理串行时间较长而导致整体的处理速度下降。
 - 为了提供简单的控制，我们使用GTK写了几个基础按钮，有兴趣的朋友可以添加更多的控制按钮。
 - 进程间通信也是很有趣的内容。
