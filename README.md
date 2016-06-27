@@ -102,7 +102,6 @@ image = cv::cvarrToMat(src);
 - 进程间通信也是很有趣的内容。
 
 ### 参考文献
-以下是上图中提供的链接的列表：
 Parrot官网: http://developer.parrot.com/products.html
 GTK官网: http://www.gtk.org/
 opencv官网: http://opencv.org/
