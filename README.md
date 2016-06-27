@@ -38,11 +38,11 @@
     area_ideal = image_width * image_height * 0.3 //粉框
     ```
   - 根据当前状态和理想状态计算差值：
-    ```
-    x_err = x_bounding - x_ideal; //橙色线
-    y_err = y_bounding - y_ideal; //橙色线
-    z_err = area_ideal - (width_bounding_box * height_bounding_box)
-    ```
+  ```
+  x_err = x_bounding - x_ideal; //橙色线
+  y_err = y_bounding - y_ideal; //橙色线
+  z_err = area_ideal - (width_bounding_box * height_bounding_box)
+  ```
   - 根据差值调整飞行器方向和速度。
 
 ### 开发步骤概要：
