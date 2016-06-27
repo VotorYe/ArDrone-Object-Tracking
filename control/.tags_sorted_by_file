@@ -1,0 +1,154 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARDRONE_TARGET_DIR	Build/Makefile	/^   ARDRONE_TARGET_DIR=$(shell pwd)\/..\/..\/Build\/Debug$/;"	m
+ARDRONE_TARGET_DIR	Build/Makefile	/^   ARDRONE_TARGET_DIR=$(shell pwd)\/..\/..\/Build\/Release$/;"	m
+GENERIC_BINARIES_SOURCE_DIR	Build/Makefile	/^GENERIC_BINARIES_SOURCE_DIR:=$(SRC_DIR)$/;"	m
+GENERIC_INCLUDES	Build/Makefile	/^GENERIC_INCLUDES:=$(addprefix -I,$(GENERIC_INCLUDES))$/;"	m
+GENERIC_LIBRARY_SOURCE_DIR	Build/Makefile	/^export GENERIC_LIBRARY_SOURCE_DIR=$(GENERIC_BINARIES_SOURCE_DIR)$/;"	m
+GENERIC_LIBS	Build/Makefile	/^GENERIC_LIBS=-lpc_ardrone -lrt -lgtk-x11-2.0 -lcairo -lgobject-2.0 -lgdk-x11-2.0 -lm -lcurses$/;"	m
+GENERIC_LIB_PATHS	Build/Makefile	/^GENERIC_LIB_PATHS=-L$(GENERIC_TARGET_BINARIES_DIR)$/;"	m
+GENERIC_TARGET_BINARIES_DIR	Build/Makefile	/^GENERIC_TARGET_BINARIES_DIR=$(ARDRONE_TARGET_DIR)$/;"	m
+GENERIC_TARGET_BINARIES_PREFIX	Build/Makefile	/^GENERIC_TARGET_BINARIES_PREFIX=$/;"	m
+PC_TARGET	Build/Makefile	/^PC_TARGET=yes$/;"	m
+SDK_PATH	Build/Makefile	/^SDK_PATH:=$(shell pwd)\/..\/..\/..\/..\/ARDroneLib$/;"	m
+SRC_DIR	Build/Makefile	/^SRC_DIR:=$(shell pwd)\/..\/Sources$/;"	m
+TARGET	Build/Makefile	/^TARGET=linux_video_demo$/;"	m
+USE_LINUX	Build/Makefile	/^USE_LINUX=yes$/;"	m
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+DEFINE_THREAD_ROUTINE	Sources/Video/backup/display_stage.c	/^DEFINE_THREAD_ROUTINE(gtk, data)$/;"	f
+display_stage_close	Sources/Video/backup/display_stage.c	/^C_RESULT display_stage_close (display_stage_cfg_t *cfg)$/;"	f
+display_stage_funcs	Sources/Video/backup/display_stage.c	/^const vp_api_stage_funcs_t display_stage_funcs = {$/;"	v
+display_stage_open	Sources/Video/backup/display_stage.c	/^C_RESULT display_stage_open (display_stage_cfg_t *cfg)$/;"	f
+display_stage_transform	Sources/Video/backup/display_stage.c	/^C_RESULT display_stage_transform (display_stage_cfg_t *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)$/;"	f
+getActualFrameSize	Sources/Video/backup/display_stage.c	/^void getActualFrameSize (display_stage_cfg_t *cfg, uint32_t *width, uint32_t *height)$/;"	f
+getPicSizeFromBufferSize	Sources/Video/backup/display_stage.c	/^static void getPicSizeFromBufferSize (uint32_t bufSize, uint32_t *width, uint32_t *height)$/;"	f	file:
+gtkRunning	Sources/Video/backup/display_stage.c	/^bool_t gtkRunning = FALSE;$/;"	v
+on_expose_event	Sources/Video/backup/display_stage.c	/^on_expose_event (GtkWidget *widget,$/;"	f	file:
+_DISPLAY_STAGE_H_	Sources/Video/backup/display_stage.h	7;"	d
+_display_stage_cfg_	Sources/Video/backup/display_stage.h	/^typedef struct _display_stage_cfg_ {$/;"	s
+bpp	Sources/Video/backup/display_stage.h	/^    float bpp;$/;"	m	struct:_display_stage_cfg_
+decoder_info	Sources/Video/backup/display_stage.h	/^    vp_api_picture_t *decoder_info;$/;"	m	struct:_display_stage_cfg_
+display_stage_cfg_t	Sources/Video/backup/display_stage.h	/^} display_stage_cfg_t;$/;"	t	typeref:struct:_display_stage_cfg_
+fbSize	Sources/Video/backup/display_stage.h	/^    uint32_t fbSize;$/;"	m	struct:_display_stage_cfg_
+frameBuffer	Sources/Video/backup/display_stage.h	/^    uint8_t *frameBuffer;$/;"	m	struct:_display_stage_cfg_
+paramsOK	Sources/Video/backup/display_stage.h	/^    bool_t paramsOK;$/;"	m	struct:_display_stage_cfg_
+widget	Sources/Video/backup/display_stage.h	/^    GtkWidget *widget;$/;"	m	struct:_display_stage_cfg_
+post_stage_close	Sources/Video/backup/post_stage.c	/^C_RESULT post_stage_close (post_stage_cfg_t *cfg)$/;"	f
+post_stage_funcs	Sources/Video/backup/post_stage.c	/^const vp_api_stage_funcs_t post_stage_funcs = {$/;"	v
+post_stage_open	Sources/Video/backup/post_stage.c	/^C_RESULT post_stage_open (post_stage_cfg_t *cfg)$/;"	f
+post_stage_transform	Sources/Video/backup/post_stage.c	/^C_RESULT post_stage_transform (post_stage_cfg_t *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)$/;"	f
+_POST_STAGE_H_	Sources/Video/backup/post_stage.h	6;"	d
+_post_stage_cfg_	Sources/Video/backup/post_stage.h	/^typedef struct _post_stage_cfg_ {$/;"	s
+outputFile	Sources/Video/backup/post_stage.h	/^    FILE *outputFile;$/;"	m	struct:_post_stage_cfg_
+outputName	Sources/Video/backup/post_stage.h	/^    char outputName[256];$/;"	m	struct:_post_stage_cfg_
+post_stage_cfg_t	Sources/Video/backup/post_stage.h	/^} post_stage_cfg_t;$/;"	t	typeref:struct:_post_stage_cfg_
+hasPaVE	Sources/Video/backup/pre_stage.c	/^bool_t hasPaVE (uint8_t *buffer)$/;"	f
+pre_stage_close	Sources/Video/backup/pre_stage.c	/^C_RESULT pre_stage_close (pre_stage_cfg_t *cfg)$/;"	f
+pre_stage_funcs	Sources/Video/backup/pre_stage.c	/^const vp_api_stage_funcs_t pre_stage_funcs = {$/;"	v
+pre_stage_open	Sources/Video/backup/pre_stage.c	/^C_RESULT pre_stage_open (pre_stage_cfg_t *cfg)$/;"	f
+pre_stage_transform	Sources/Video/backup/pre_stage.c	/^C_RESULT pre_stage_transform (pre_stage_cfg_t *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)$/;"	f
+_PRE_STAGE_H_	Sources/Video/backup/pre_stage.h	7;"	d
+_pre_stage_cfg_	Sources/Video/backup/pre_stage.h	/^typedef struct _pre_stage_cfg_ {$/;"	s
+outputFile	Sources/Video/backup/pre_stage.h	/^    FILE *outputFile;$/;"	m	struct:_pre_stage_cfg_
+outputName	Sources/Video/backup/pre_stage.h	/^    char outputName[256];$/;"	m	struct:_pre_stage_cfg_
+pre_stage_cfg_t	Sources/Video/backup/pre_stage.h	/^} pre_stage_cfg_t;$/;"	t	typeref:struct:_pre_stage_cfg_
+DEFINE_THREAD_ROUTINE	Sources/Video/display_stage.c	/^DEFINE_THREAD_ROUTINE(gtk, data)$/;"	f
+create_shared_memory	Sources/Video/display_stage.c	/^void* create_shared_memory(key_t key, size_t size, int *shmid) {$/;"	f
+del_share_memory	Sources/Video/display_stage.c	/^void del_share_memory(void* shm, int shmid) {$/;"	f
+display_stage_close	Sources/Video/display_stage.c	/^C_RESULT display_stage_close (display_stage_cfg_t *cfg)$/;"	f
+display_stage_funcs	Sources/Video/display_stage.c	/^const vp_api_stage_funcs_t display_stage_funcs = {$/;"	v
+display_stage_open	Sources/Video/display_stage.c	/^C_RESULT display_stage_open (display_stage_cfg_t *cfg)$/;"	f
+display_stage_transform	Sources/Video/display_stage.c	/^C_RESULT display_stage_transform (display_stage_cfg_t *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)$/;"	f
+getActualFrameSize	Sources/Video/display_stage.c	/^void getActualFrameSize (display_stage_cfg_t *cfg, uint32_t *width, uint32_t *height)$/;"	f
+getPicSizeFromBufferSize	Sources/Video/display_stage.c	/^static void getPicSizeFromBufferSize (uint32_t bufSize, uint32_t *width, uint32_t *height)$/;"	f	file:
+gtkRunning	Sources/Video/display_stage.c	/^bool_t gtkRunning = FALSE;$/;"	v
+on_expose_event	Sources/Video/display_stage.c	/^on_expose_event (GtkWidget *widget,$/;"	f	file:
+DATA_KEY	Sources/Video/display_stage.h	/^static const key_t DATA_KEY = 1313;$/;"	v
+DATA_SIZE	Sources/Video/display_stage.h	/^static const int DATA_SIZE = 1048576;$/;"	v
+ERR_KEY	Sources/Video/display_stage.h	/^static const key_t ERR_KEY = 8888;$/;"	v
+SEM_KEY	Sources/Video/display_stage.h	/^static const key_t SEM_KEY = 9999;$/;"	v
+SEM_KEY2	Sources/Video/display_stage.h	/^static const key_t SEM_KEY2 = 7777;$/;"	v
+SHARE_KEY	Sources/Video/display_stage.h	/^static const key_t SHARE_KEY = 1333;$/;"	v
+_DISPLAY_STAGE_H_	Sources/Video/display_stage.h	7;"	d
+_display_stage_cfg_	Sources/Video/display_stage.h	/^typedef struct _display_stage_cfg_ {$/;"	s
+area_err	Sources/Video/display_stage.h	/^struct area_err {$/;"	s
+bpp	Sources/Video/display_stage.h	/^    float bpp;$/;"	m	struct:_display_stage_cfg_
+data_shm	Sources/Video/display_stage.h	/^static void *info_shm, *data_shm, *err_shm;$/;"	v
+data_shmid	Sources/Video/display_stage.h	/^static int info_shmid, data_shmid, err_shmid;$/;"	v
+decoder_info	Sources/Video/display_stage.h	/^    vp_api_picture_t *decoder_info;$/;"	m	struct:_display_stage_cfg_
+display_stage_cfg_t	Sources/Video/display_stage.h	/^} display_stage_cfg_t;$/;"	t	typeref:struct:_display_stage_cfg_
+err_info	Sources/Video/display_stage.h	/^static struct area_err *err_info;$/;"	v	typeref:struct:area_err
+err_shm	Sources/Video/display_stage.h	/^static void *info_shm, *data_shm, *err_shm;$/;"	v
+err_shmid	Sources/Video/display_stage.h	/^static int info_shmid, data_shmid, err_shmid;$/;"	v
+fbSize	Sources/Video/display_stage.h	/^    uint32_t fbSize;$/;"	m	struct:_display_stage_cfg_
+frameBuffer	Sources/Video/display_stage.h	/^    uint8_t *frameBuffer;$/;"	m	struct:_display_stage_cfg_
+frame_id	Sources/Video/display_stage.h	/^    int frame_id;$/;"	m	struct:tran_data
+height	Sources/Video/display_stage.h	/^    int height;$/;"	m	struct:tran_data
+info_shm	Sources/Video/display_stage.h	/^static void *info_shm, *data_shm, *err_shm;$/;"	v
+info_shmid	Sources/Video/display_stage.h	/^static int info_shmid, data_shmid, err_shmid;$/;"	v
+paramsOK	Sources/Video/display_stage.h	/^    bool_t paramsOK;$/;"	m	struct:_display_stage_cfg_
+pre_err_id	Sources/Video/display_stage.h	/^static int pre_err_id;$/;"	v
+sem_id	Sources/Video/display_stage.h	/^static int sem_id;$/;"	v
+sem_id2	Sources/Video/display_stage.h	/^static int sem_id2;$/;"	v
+shared_data	Sources/Video/display_stage.h	/^static uint8_t *shared_data;$/;"	v
+shared_info	Sources/Video/display_stage.h	/^static struct tran_data *shared_info;$/;"	v	typeref:struct:tran_data
+size	Sources/Video/display_stage.h	/^    int size;$/;"	m	struct:tran_data
+tran_data	Sources/Video/display_stage.h	/^struct tran_data {$/;"	s
+widget	Sources/Video/display_stage.h	/^    GtkWidget *widget;$/;"	m	struct:_display_stage_cfg_
+width	Sources/Video/display_stage.h	/^    int width;$/;"	m	struct:tran_data
+x_err	Sources/Video/display_stage.h	/^    int x_err;$/;"	m	struct:area_err
+y_err	Sources/Video/display_stage.h	/^    int y_err;$/;"	m	struct:area_err
+z_err	Sources/Video/display_stage.h	/^    int z_err;$/;"	m	struct:area_err
+post_stage_close	Sources/Video/post_stage.c	/^C_RESULT post_stage_close (post_stage_cfg_t *cfg)$/;"	f
+post_stage_funcs	Sources/Video/post_stage.c	/^const vp_api_stage_funcs_t post_stage_funcs = {$/;"	v
+post_stage_open	Sources/Video/post_stage.c	/^C_RESULT post_stage_open (post_stage_cfg_t *cfg)$/;"	f
+post_stage_transform	Sources/Video/post_stage.c	/^C_RESULT post_stage_transform (post_stage_cfg_t *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)$/;"	f
+_POST_STAGE_H_	Sources/Video/post_stage.h	6;"	d
+_post_stage_cfg_	Sources/Video/post_stage.h	/^typedef struct _post_stage_cfg_ {$/;"	s
+outputFile	Sources/Video/post_stage.h	/^    FILE *outputFile;$/;"	m	struct:_post_stage_cfg_
+outputName	Sources/Video/post_stage.h	/^    char outputName[256];$/;"	m	struct:_post_stage_cfg_
+post_stage_cfg_t	Sources/Video/post_stage.h	/^} post_stage_cfg_t;$/;"	t	typeref:struct:_post_stage_cfg_
+hasPaVE	Sources/Video/pre_stage.c	/^bool_t hasPaVE (uint8_t *buffer)$/;"	f
+pre_stage_close	Sources/Video/pre_stage.c	/^C_RESULT pre_stage_close (pre_stage_cfg_t *cfg)$/;"	f
+pre_stage_funcs	Sources/Video/pre_stage.c	/^const vp_api_stage_funcs_t pre_stage_funcs = {$/;"	v
+pre_stage_open	Sources/Video/pre_stage.c	/^C_RESULT pre_stage_open (pre_stage_cfg_t *cfg)$/;"	f
+pre_stage_transform	Sources/Video/pre_stage.c	/^C_RESULT pre_stage_transform (pre_stage_cfg_t *cfg, vp_api_io_data_t *in, vp_api_io_data_t *out)$/;"	f
+_PRE_STAGE_H_	Sources/Video/pre_stage.h	7;"	d
+_pre_stage_cfg_	Sources/Video/pre_stage.h	/^typedef struct _pre_stage_cfg_ {$/;"	s
+outputFile	Sources/Video/pre_stage.h	/^    FILE *outputFile;$/;"	m	struct:_pre_stage_cfg_
+outputName	Sources/Video/pre_stage.h	/^    char outputName[256];$/;"	m	struct:_pre_stage_cfg_
+pre_stage_cfg_t	Sources/Video/pre_stage.h	/^} pre_stage_cfg_t;$/;"	t	typeref:struct:_pre_stage_cfg_
+SEMAPHORE_	Sources/Video/semaphore.h	2;"	d
+array	Sources/Video/semaphore.h	/^    unsigned short *array;$/;"	m	union:semun
+buf	Sources/Video/semaphore.h	/^    struct semid_ds *buf;$/;"	m	union:semun	typeref:struct:semun::semid_ds
+del_semaphore	Sources/Video/semaphore.h	/^void del_semaphore(int semid) {$/;"	f
+semaphore_P	Sources/Video/semaphore.h	/^int semaphore_P(int sem_id) {$/;"	f
+semaphore_V	Sources/Video/semaphore.h	/^int semaphore_V(int sem_id) {$/;"	f
+semun	Sources/Video/semaphore.h	/^union semun {$/;"	u
+set_semvalue	Sources/Video/semaphore.h	/^int set_semvalue(int semid) {$/;"	f
+val	Sources/Video/semaphore.h	/^    int val;$/;"	m	union:semun
+DEFINE_THREAD_ROUTINE	Sources/ardrone_testing_tool.c	/^DEFINE_THREAD_ROUTINE(auto_control, NO_PARAM) {$/;"	f
+DEFINE_THREAD_ROUTINE	Sources/ardrone_testing_tool.c	/^DEFINE_THREAD_ROUTINE(keyboard_control, NO_PARAM) { \/\/$/;"	f
+EXAMPLE_POST_STAGES	Sources/ardrone_testing_tool.c	153;"	d	file:
+EXAMPLE_PRE_STAGES	Sources/ardrone_testing_tool.c	152;"	d	file:
+FILENAMESIZE	Sources/ardrone_testing_tool.c	65;"	d	file:
+alpha	Sources/ardrone_testing_tool.c	/^const float alpha = 0.3;$/;"	v
+ardrone_tool_exit	Sources/ardrone_testing_tool.c	/^bool_t ardrone_tool_exit ()$/;"	f
+ardrone_tool_init_custom	Sources/ardrone_testing_tool.c	/^C_RESULT ardrone_tool_init_custom (void)$/;"	f
+ardrone_tool_shutdown_custom	Sources/ardrone_testing_tool.c	/^C_RESULT ardrone_tool_shutdown_custom ()$/;"	f
+beta	Sources/ardrone_testing_tool.c	/^const float beta = 0.7;$/;"	v
+controlCHandler	Sources/ardrone_testing_tool.c	/^void controlCHandler (int signal)$/;"	f
+dispCfg	Sources/ardrone_testing_tool.c	/^display_stage_cfg_t dispCfg;$/;"	v
+drone1Codec	Sources/ardrone_testing_tool.c	/^codec_type_t drone1Codec = P264_CODEC;$/;"	v
+drone2Codec	Sources/ardrone_testing_tool.c	/^codec_type_t drone2Codec = H264_360P_CODEC;$/;"	v
+encodedFileName	Sources/ardrone_testing_tool.c	/^char encodedFileName[FILENAMESIZE] = {0};$/;"	v
+exit_program	Sources/ardrone_testing_tool.c	/^int exit_program = 1;$/;"	v
+free_flight	Sources/ardrone_testing_tool.c	/^ void free_flight(int flags, float phi, float theta, float gaz, float yaw) {$/;"	f
+getSystemTime	Sources/ardrone_testing_tool.c	/^ long long getSystemTime() {$/;"	f
+main	Sources/ardrone_testing_tool.c	/^int main (int argc, char *argv[])$/;"	f
+precfg	Sources/ardrone_testing_tool.c	/^pre_stage_cfg_t precfg;$/;"	v
+tracking	Sources/ardrone_testing_tool.c	/^static int tracking = 0;$/;"	v	file:
+videoChannel	Sources/ardrone_testing_tool.c	/^ZAP_VIDEO_CHANNEL videoChannel = ZAP_CHANNEL_HORI;$/;"	v
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
