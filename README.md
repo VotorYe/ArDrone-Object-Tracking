@@ -103,7 +103,7 @@ image = cv::cvarrToMat(src);
 
 ### 参考文献
 以下是上图中提供的链接的列表：
-  [Parrot官网]: http://developer.parrot.com/products.html
+  Parrot官网: http://developer.parrot.com/products.html
   [GTK官网]: http://www.gtk.org/
   [opencv官网]: http://opencv.org/
   [camshift算法]: http://docs.opencv.org/3.1.0/db/df8/tutorial_py_meanshift.html#gsc.tab=0
