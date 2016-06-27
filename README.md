@@ -87,7 +87,7 @@
 ### 经验和总结
 - 安装`AR.Drone2.0 SDk`出现编译错误。这个套件是为linux 32bit开发，在64bit上需要安装一些依赖。[参考][9]。同时我们的一位组员的ubuntu 15.xx在安装依赖后依然无法编译套件，建议使用ubuntu 14.xx做二次开发。
 - 将图像数据转化为`IplImage`格式：
-  ``` c++
+  ```
   if (src == NULL)
       src = cvCreateImage(cvSize(width,height), IPL_DEPTH_8U, 3);
   if (dst == NULL)
