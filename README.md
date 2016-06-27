@@ -110,7 +110,7 @@
   [2]: http://www.gtk.org/
   [3]: http://opencv.org/
   [4]: http://docs.opencv.org/3.1.0/db/df8/tutorial_py_meanshift.html#gsc.tab=0
-  [5]: ./images/1467021522909.jpg "实例图片"
+  [5]: http://i.stack.imgur.com/4nmex.jpg "实例图片"
   [6]: https://zh.wikipedia.org/wiki/%E8%A1%8C%E7%A8%8B%E9%96%93%E9%80%9A%E8%A8%8A
   [7]: http://developer.parrot.com/products.html
   [8]: http://forum.developer.parrot.com/t/installing-sdk-2-0-1-problem/1483/7
