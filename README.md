@@ -102,12 +102,12 @@ image = cv::cvarrToMat(src);
 - 进程间通信也是很有趣的内容。
 
 ### 参考文献
-Parrot官网: http://developer.parrot.com/products.html
-GTK官网: http://www.gtk.org/
-opencv官网: http://opencv.org/
-camshift算法: http://docs.opencv.org/3.1.0/db/df8/tutorial_py_meanshift.html#gsc.tab=0
-进程间通讯wikiPedia: https://zh.wikipedia.org/wiki/%E8%A1%8C%E7%A8%8B%E9%96%93%E9%80%9A%E8%A8%8A
-SDk编译问题: http://forum.developer.parrot.com/t/installing-sdk-2-0-1-problem/1483/7
+- Parrot官网: http://developer.parrot.com/products.html
+- GTK官网: http://www.gtk.org/
+- opencv官网: http://opencv.org/
+- camshift算法: http://docs.opencv.org/3.1.0/db/df8/tutorial_py_meanshift.html#gsc.tab=0
+- 进程间通讯wikiPedia: https://zh.wikipedia.org/wiki/%E8%A1%8C%E7%A8%8B%E9%96%93%E9%80%9A%E8%A8%8A
+- SDk编译问题: http://forum.developer.parrot.com/t/installing-sdk-2-0-1-problem/1483/7
 
   [1]: http://developer.parrot.com/products.html
   [2]: http://www.gtk.org/
