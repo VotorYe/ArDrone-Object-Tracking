@@ -5,7 +5,7 @@
  - 自飞行器向控制端发送飞行器状态数据 （参考官方文档7.1）
  - 自控制端向飞行器发送控制指令 （参考官方文档4.1）
 
-`AR.Drone2.0`的[首页](http://http://www.parrot.com/zh/products/ardrone-2/)。
+`AR.Drone2.0`的[首页](http://www.parrot.com/zh/products/ardrone-2/)。
 
 ### 项目目标
 使用跟随算法识别视频流中预先选定的物体，根据物体相对飞行器的位置，自动发送控制指令控制飞行器，保持物体在飞行器视野中心。
