@@ -59,7 +59,7 @@
 以下是Linux下的部署教程：
 - 依赖
   - 确保你的电脑安装了[`AR.Drone2.0 SDk2`][7]（[编译错误怎么办][8]）
-  - 确保你的电脑安装了GTK，cmake，make
+  - 确保你的电脑安装了GTK，cmake，make，opencv
 - 编译
   - 进入`imageProcess`文件夹，执行：
   ```
